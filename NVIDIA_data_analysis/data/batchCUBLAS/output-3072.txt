@@ -1,0 +1,60 @@
+batchCUBLAS Starting...
+
+MapSMtoCores for SM 6.1 is undefined.  Default to use 128 Cores/SM
+GPU Device 0: "TITAN X (Pascal)" with compute capability 6.1
+
+
+ ==== Running single kernels ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=3072 n=3072 k=3072  alpha = (0xbf800000, -1) beta= (0x40000000, 2)
+#### args: lda=3072 ldb=3072 ldc=3072
+^^^^ elapsed = 0.00772786 sec  GFLOPS=7502.99
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=3072 n=3072 k=3072  alpha = (0x0000000000000000, 0) beta= (0x0000000000000000, 0)
+#### args: lda=3072 ldb=3072 ldc=3072
+^^^^ elapsed = 0.15974903 sec  GFLOPS=362.957
+@@@@ dgemm test OK
+
+ ==== Running N=10 without streams ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=3072 n=3072 k=3072  alpha = (0xbf800000, -1) beta= (0x00000000, 0)
+#### args: lda=3072 ldb=3072 ldc=3072
+^^^^ elapsed = 0.07727718 sec  GFLOPS=7503.13
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=3072 n=3072 k=3072  alpha = (0xbff0000000000000, -1) beta= (0x0000000000000000, 0)
+#### args: lda=3072 ldb=3072 ldc=3072
+^^^^ elapsed = 1.59625888 sec  GFLOPS=363.237
+@@@@ dgemm test OK
+
+ ==== Running N=10 with streams ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=3072 n=3072 k=3072  alpha = (0x40000000, 2) beta= (0x40000000, 2)
+#### args: lda=3072 ldb=3072 ldc=3072
+^^^^ elapsed = 0.09808397 sec  GFLOPS=5911.47
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=3072 n=3072 k=3072  alpha = (0xbff0000000000000, -1) beta= (0x0000000000000000, 0)
+#### args: lda=3072 ldb=3072 ldc=3072
+^^^^ elapsed = 1.57317400 sec  GFLOPS=368.567
+@@@@ dgemm test OK
+
+ ==== Running N=10 batched ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=3072 n=3072 k=3072  alpha = (0x3f800000, 1) beta= (0xbf800000, -1)
+#### args: lda=3072 ldb=3072 ldc=3072
+^^^^ elapsed = 0.15611482 sec  GFLOPS=3714.07
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=3072 n=3072 k=3072  alpha = (0xbff0000000000000, -1) beta= (0x4000000000000000, 2)
+#### args: lda=3072 ldb=3072 ldc=3072
+^^^^ elapsed = 1.77147412 sec  GFLOPS=327.31
+@@@@ dgemm test OK
+
+Test Summary
+0 error(s)

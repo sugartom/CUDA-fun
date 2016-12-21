@@ -1,0 +1,1687 @@
+    1  cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+    2  ~/.dropbox-dist/dropboxd
+    3  cd Dropbox
+    4  cd 
+    5  cd ~/bin
+    6  mkdir -p ~/bin
+    7  wget -O ~/bin/dropbox.py "https://www.dropbox.com/download?dl=packages/dropbox.py"
+    8  chmod +x ~/bin/dropbox.py
+    9  ~/bin/dropbox.py help
+   10  ~/bin/dropbox.py start
+   11  ~/bin/dropbox.py status
+   12  htop
+   13  sudo apt-get install htop
+   14  ethtool
+   15  htop
+   16  ~/bin/dropbox.py status
+   17  echo fs.inotify.max_user_watches=100000 | sudo tee -a /etc/sysctl.conf; sudo sysctl -p
+   18  ~/bin/dropbox.py help
+   19  ~/bin/dropbox.py stop
+   20  ~/bin/dropbox.py start
+   21  ~/bin/dropbox.py status
+   22  ~/bin/dropbox.py stop
+   23  ~/bin/dropbox.py status
+   24  ~/bin/dropbox.py start
+   25  ~/bin/dropbox.py status
+   26  ~/bin/dropbox.py stop
+   27  nvcc -version
+   28  vim ~/.zshrc
+   29  source ~/.zshrc
+   30  cd /usr/local/cuda-7.5/extras/CUPTI
+   31  ls
+   32  cd lib64
+   33  ls
+   34  cd
+   35  vim ~/.zshrc
+   36  source ~/.zshrc
+   37  nvcc
+   38  nvcc -version
+   39  nvcc --version
+   40  dropbox status
+   41  dropbox.py status
+   42  ~/bin/dropbox.py start
+   43  ~/bin/dropbox.py status
+   44  sudo apt-get install python-pip python-dev
+   45  export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.10.0-cp27-none-linux_x86_64.whl
+   46  sudo pip install --upgrade $TF_BINARY_URL
+   47  ~/bin/dropbox.py status
+   48  python -c 'import os; import inspect; import tensorflow; print(os.path.dirname(inspect.getfile(tensorflow)))'
+   49  cd Dow
+   50  cd
+   51  ls
+   52  ls -al
+   53  rm Downloads
+   54  ls
+   55  mkdir Downloads
+   56  ls
+   57  ls -al
+   58  ls
+   59  cd Downloads
+   60  ls
+   61  tar xvzf cudnn-7.5-linux-x64-v5.0-ga.tgz
+   62  sudo cp cuda/include/cudnn.h /usr/local/cuda/include
+   63  sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+   64  sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+   65  python -c 'import os; import inspect; import tensorflow; print(os.path.dirname(inspect.getfile(tensorflow)))'
+   66  cd
+   67  python /usr/local/lib/python2.7/dist-packages/tensorflow/models/image/mnist/convolutional.py
+   68  cd /usr/local/cuda
+   69  cd include
+   70  ls
+   71  rm cudnn.h
+   72  sudo rm cudnn.h
+   73  cd ..
+   74  cd lib64
+   75  ls
+   76  cd Downloads
+   77  ls
+   78  rm cudnn-7.5-linux-x64-v5.0-ga.tgz
+   79  rm -rf cuda
+   80  tar xvzf cudnn-7.5-linux-x64-v5.1.tgz
+   81  ls
+   82  cd cuda
+   83  ls
+   84  cd lib64
+   85  ls
+   86  rm libcudnn*
+   87  sudo rm libcudnn*
+   88  cd ..
+   89  cd //
+   90  cd
+   91  cd Downloads/cuda
+   92  cd ..
+   93  sudo cp cuda/include/cudnn.h /usr/local/cuda/include
+   94  sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+   95  sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+   96  cd ..
+   97  cd include
+   98  ls
+   99  cd ..
+  100  cd
+  101  python /usr/local/lib/python2.7/dist-packages/tensorflow/models/image/mnist/convolutional.py
+  102  cd
+  103  ~/bin/dropbox.py status
+  104  cd Dropbox/tensorflow
+  105  cd
+  106  sudo add-apt-repository ppa:webupd8team/java
+  107  sudo apt-get update
+  108  sudo apt-get install oracle-java8-installer
+  109  echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+  110  curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add -
+  111  sudo apt-get update && sudo apt-get install bazel
+  112  sudo apt-get upgrade bazel
+  113  sudo apt-get install python-numpy swig python-dev python-wheel
+  114  bazel
+  115  ls
+  116  cd bin
+  117  ls
+  118  cd ..
+  119  cd data
+  120  ls
+  121  cd
+  122  brew
+  123  sudo apt-get install swig
+  124  cd /usr/local/cuda/lib64
+  125  ls
+  126  vim ~/.zshrc
+  127  cd
+  128  cd Dropbox/tensorflow
+  129  ./configure
+  130  git branch
+  131  git checkout master
+  132  ./configure
+  133  git checkout yitao
+  134  ls
+  135  vim configure
+  136  cd util/python/
+  137  ls
+  138  cd ..
+  139  vim configure
+  140  grep -r "python_include" .
+  141  cd
+  142  mkdir Documents
+  143  cd Documents
+  144  ls
+  145  git clone https://github.com/tensorflow/tensorflow.git
+  146  cd tensorflow
+  147  ./configure
+  148  which python
+  149  ./configure
+  150  cd /usr/local/cuda/lib64
+  151  ls
+  152  sudo pip uninstall -y protobuf
+  153  sudo pip uninstall -y tensorflow
+  154  bazel build -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
+  155  ./configure
+  156  bazel build -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
+  157  cd
+  158  sudo add-apt-repository ppa:webupd8team/java
+  159  sudo apt-get update
+  160  sudo apt-get reinstall oracle-java8-installer
+  161  sudo apt-get uninstall oracle-java8-installer
+  162  sudo apt-get --purge autoremove oracle-java8-installer
+  163  sudo apt-get install oracle-java8-installer
+  164  cd
+  165  cd Downloads
+  166  ls
+  167  wget https://github.com/bazelbuild/bazel/releases/download/0.3.1/bazel-0.3.1-installer-linux-x86_64.sh
+  168  chmod +x bazel-0.3.1-installer-linux-x86_64.sh
+  169  ./bazel-0.3.1-installer-linux-x86_64.sh --user
+  170  cd
+  171  vim ~/.zshrc
+  172  cd ~/bin
+  173  pwd
+  174  vim ~/.zshrc
+  175  cd
+  176  source ~/.zshrc
+  177  cd Documents/tensorflow
+  178  ./configure
+  179  bazel build -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
+  180  htop
+  181  bazel build -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
+  182  cd ..
+  183  rm -rf tensorflow
+  184  git clone https://github.com/sugartom/tensorflow.git
+  185  cd tensorflow
+  186  git checkout yitao
+  187  cd util/python
+  188  ls
+  189  cd ..
+  190  ./configure
+  191  bazel build -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
+  192  rm -rf ~/.cache/bazel/*
+  193  ls ~/.cache/bazel
+  194  bazel build -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
+  195  ./configure
+  196  rm -rf ~/.cache/bazel/*
+  197  bazel build -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package --verbose_failures
+  198  rm -rf ~/.cache/bazel/*
+  199  screen -S tomTest
+  200  sudo apt-get install screen
+  201  screen -S tomTest
+  202  bazel build -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package --verbose_failures --local_resources 2048,.5,1.0
+  203  screen -r
+  204  history
+  205  bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
+  206  sudo pip install /tmp/tensorflow_pkg/tensorflow-0.9.0-py2-none-any.whl
+  207  cd
+  208  cd Dropbox/PhD/PhD.Year2.2/IBM/IBM-code/tensorflow/mat_split
+  209  python matmul_two_matrix.py
+  210  pwd
+  211  ifconfig
+  212  history
+  213  git diff
+  214  cd Dropbox/PhD/PhD.Year2.2/IBM/IBM-code/tensorflow/mat_split
+  215  python matmul_two_matrix.py
+  216  vim matmul_two_matrix.py
+  217  python matmul_two_matrix.py
+  218  pwd
+  219  cd
+  220  cd Dropbox/tensorflow
+  221  ./configure
+  222  rm -rf util/python/python_include
+  223  ./configure
+  224  rm -rf util/python/python_lib
+  225  ./configure
+  226  cd
+  227  cd Documents/tensorflow
+  228  git status
+  229  git diff
+  230  vim tensorflow/stream_executor/dso_loader.cc
+  231  cd Dropbox/tensorflow
+  232  vim third_party/gpus/cuda/platform.bzl
+  233  pwd
+  234  sudo pip uninstall -y protobuf
+  235  sudo pip uninstall -y tensorflow
+  236  bazel build --jobs 100 -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
+  237  ./configure
+  238  rm -rf third_party/py/numpy/numpy_include
+  239  ./configure
+  240  bazel build --jobs 100 -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
+  241  dropbox.py status
+  242  vim tensorflow/core/common_runtime/executor.cc
+  243  bazel build --jobs 100 -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
+  244  bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
+  245  sudo pip install /tmp/tensorflow_pkg/tensorflow-0.9.0-py2-none-any.whl
+  246  pwd
+  247  cd
+  248  cd Dropbox/PhD/PhD.Year2.2/IBM/IBM-code/tensorflow/mat_split
+  249  python matmul_two_matrix.py
+  250  cd Dropbox/PhD/PhD.Year2.2/IBM/IBM-code/tensorflow/mat_split
+  251  vim matmul_two_matrix.py
+  252  python matmul_two_matrix.py
+  253  cd tensorflow
+  254  grep -r "haha" ...
+  255  grep -r "haha" .
+  256  python matmul_two_matrix.py
+  257  dropbox status
+  258  ~/bin/dropbox.py status
+  259  ~/bin/dropbox.py stop
+  260  ~/bin/dropbox.py status
+  261  vim ~/.zshrc
+  262  nvcc -version
+  263  nvcc --version
+  264  dropbox status
+  265  dropbox.py status
+  266  dropbox.py start
+  267  dropbox.py status
+  268  cd Dropbox/PhD/PhD.Year2.2/IBM/IBM-code/NVIDIA_CUDA-7.5_Samples/0_Simple/
+  269  dropbox.py status
+  270  ls
+  271  cd /usr/local/cuda-7.5
+  272  ls
+  273  cd include
+  274  ls
+  275  cd ..
+  276  cd lib64
+  277  lsd
+  278  ls
+  279  dropbox.py status
+  280  ls
+  281  ls ~/Downloads
+  282  cd
+  283  cd Downloads
+  284  ls
+  285  tar xvzf cudnn-7.5-linux-x64-v5.1.tgz
+  286  sudo cp cuda/include/cudnn.h /usr/local/cuda/include
+  287  sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+  288  sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+  289  ls
+  290  pip
+  291  git clone https://github.com/tensorflow/tensorflow
+  292  sudo apt-get install python-numpy swig python-dev python-wheel
+  293  bazel -version
+  294  bazel --version
+  295  bazel
+  296  brew install bazel swig
+  297  cd tensorflow
+  298  ./configure
+  299  ls /usr/local/cuda/lib64/
+  300  cd /usr/local
+  301  ls
+  302  ls -al
+  303  rm cuda
+  304  sudo rm cuda
+  305  ls
+  306  man ln
+  307  ln -s cuda-7.5 cuda
+  308  sudo ln -s cuda-7.5 cuda
+  309  ls
+  310  ls -al
+  311  cd
+  312  cd Downloads/tensorflow
+  313  ./configure
+  314  cd ..
+  315  ls
+  316  cd
+  317  cd /usr/local/cuda-8.0
+  318  cd include
+  319  ls
+  320  rm cudnn.h
+  321  sudo rm cudnn.h
+  322  cd ..
+  323  cd lib64
+  324  sudo rm libcudnn*
+  325  cd
+  326  cd Downloads
+  327  sudo cp cuda/include/cudnn.h /usr/local/cuda/include
+  328  sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+  329  sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+  330  cd tensorflow
+  331  ./configure
+  332  bazel version
+  333  sudo apt-get upgrade bazel
+  334  bazel version
+  335  vim ~/.zshrc
+  336  source ~/.zshrc
+  337  bazel version
+  338  ./configure
+  339  bazel build -c opt //tensorflow/tools/pip_package:build_pip_package
+  340  dropbox.py status
+  341  dropbox.py stop
+  342  dropbox.py status
+  343  bazel build -c opt //tensorflow/tools/pip_package:build_pip_package
+  344  df -h
+  345  htop
+  346  dropbox.py status
+  347  ls
+  348  dropbox.py status
+  349  source ~/.zshrc
+  350  dropbox status
+  351  cd Downloads/NVIDIA_CUDA-7.5_Samples
+  352  ls
+  353  cd nvidia_cuda-7.5_samples
+  354  ls
+  355  cd ..
+  356  ls -al
+  357  cd NVIDIA_CUDA-7.5_Samples
+  358  ls
+  359  cd ..
+  360  ls
+  361  rm -rf nvidia_cuda-7.5_samples
+  362  ls
+  363  cd NVIDIA_CUDA-7.5_Samples
+  364  ls
+  365  cd 0_Simple
+  366  ls
+  367  cd ..
+  368  cd 1_Utilities
+  369  ls
+  370  cd ..
+  371  tar xvzf NVIDIA_CUDA-7.5_Samples.zip
+  372  unzip NVIDIA_CUDA-7.5_Samples.zip
+  373  ls
+  374  cd nvidia_cuda-7.5_samples
+  375  ls
+  376  cd 0_simple
+  377  ls
+  378  cd ..
+  379  ls
+  380  rm NVIDIA_CUDA-7.5_Samples.zip
+  381  rm -rf nvidia_cuda-7.5_samples
+  382  rm -rf NVIDIA_CUDA-7.5_Samples
+  383  dropbox status
+  384  Dropbox STATUS
+  385  dropbox status
+  386  ls
+  387  rm bazel-0.3.1-installer-linux-x86_64.sh
+  388  rm dropbox_2015.10.28_amd64.deb
+  389  ls
+  390  unzip NVIDIA_CUDA-7.5_Samples.tar.gz
+  391  ls
+  392  tar -zxvf NVIDIA_CUDA-7.5_Samples.tar.gz
+  393  cd NVIDIA_CUDA-7.5_Samples
+  394  ls
+  395  cd 0_Simple
+  396  ls
+  397  cd matrixMulCUBLAS-two_stream_two_matrix_sequential
+  398  make clean
+  399  make
+  400  ./matrixMulCUBLAS
+  401  cd ..
+  402  cd matrixMulCUBLAS
+  403  ls
+  404  make clean
+  405  make
+  406  ./matrixMulCUBLAS
+  407  cd ..
+  408  cd matrixMulCUBLAS-two_stream_two_matrix_parallel_barrier
+  409  make clean
+  410  make
+  411  ./matrixMulCUBLAS
+  412  make clean
+  413  make
+  414  ./matrixMulCUBLAS
+  415  cd //
+  416  cd
+  417  cd Dropbox/PhD/PhD.Year2.2/IBM/IBM-code/NVIDIA_CUDA-7.5_Samples/0_Simple/
+  418  cd ..
+  419  cd 6_Advanced
+  420  ls
+  421  cd StreamPriorities-two_stream_two_kernel
+  422  make clean
+  423  make
+  424  ./StreamPriorities
+  425  cd ..
+  426  cd 0_Simple/matrixMulCUBLAS
+  427  dropbox status
+  428  make clean
+  429  make
+  430  ./matrixMulCUBLAS
+  431  cd 
+  432  cd Downloads/NVIDIA_CUDA-7.5_Samples/0_Simple/matrixMulCUBLAS-two_stream_two_matrix_
+  433  cd Downloads/NVIDIA_CUDA-7.5_Samples/0_Simple/matrixMulCUBLAS-two_stream_two_matrix_sequential
+  434  make clean
+  435  make
+  436  ./matrixMulCUBLAS
+  437  vim matrixMulCUBLAS.cpp
+  438  make clean
+  439  make
+  440  ./matrixMulCUBLAS
+  441  cd
+  442  cd Downloads
+  443  ls
+  444  rm -rf cuda
+  445  cd 
+  446  cd /usr/local
+  447  ls
+  448  ls -al
+  449  rm cuda
+  450  sudo rm cuda
+  451  ln -s cuda-8.0 cuda
+  452  sudo ln -s cuda-8.0 cuda
+  453  ls -al
+  454  cd
+  455  cd Downloads
+  456  ls
+  457  tar xvzf cudnn-8.0-linux-x64-v5.1.tgz
+  458  sudo cp cuda/include/cudnn.h /usr/local/cuda/include
+  459  sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+  460  sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+  461  cd
+  462  cd /usr/local/cuda-8.0/lib64
+  463  ls
+  464  cd
+  465  vim ~/.zshrc
+  466  source ~/.zshrc
+  467  cd Downloads/
+  468  mkdir tmp
+  469  cd tmp
+  470  cuda-install-samples-8.0.sh
+  471  cuda-install-samples-8.0.sh ./
+  472  cd NVIDIA_CUDA-8.0_Samples/0_Simple/matrixMulCUBLAS
+  473  make clean
+  474  make
+  475  ./matrixMulCUBLAS
+  476  cd ..
+  477  ls
+  478  cd matrixMulCUBLAS-two_stream_two_matrix_sequential
+  479  make clean
+  480  vim matrixMulCUBLAS.cpp
+  481  make clean
+  482  make
+  483  vim matrixMulCUBLAS.cpp
+  484  dropbox status
+  485  pwd
+  486  cd Dropbox/PhD/PhD.Year2.2/IBM/IBM-code/NVIDIA_CUDA-7.5_Samples/0_Simple/
+  487  ls
+  488  dropbox status
+  489  dropbox stop
+  490  sudo chown "$USER" "$HOME"
+  491  sudo chown -R "$USER" ~/Dropbox ~/.dropbox
+  492  cd
+  493  cd ..
+  494  ls
+  495  rm NVIDIA_CUDA-7.5_Samples.tar.gz
+  496  cuda-install-samples-8.0.sh
+  497  cuda-install-samples-8.0.sh ./
+  498  dropbox status
+  499  ls
+  500  cd NVIDIA_CUDA-8.0_Samples
+  501  ls
+  502  cd 0_Simple
+  503  ls
+  504  cd matrixMulCUBLAS
+  505  make clean
+  506  make
+  507  ls
+  508  vim matrixMulCUBLAS.cpp
+  509  vim ~/.vimrc
+  510  vim matrixMulCUBLAS
+  511  vim matrixMulCUBLAS.cpp
+  512  make clean
+  513  make
+  514  ./matrixMulCUBLAS
+  515  cd ..
+  516  cp -a matrixMul matrixMul_test
+  517  ls
+  518  rm -rf matrixMul_test
+  519  cp -a matrixMulCUBLAS matrixMulCUBLAS_test
+  520  ls
+  521  cd matrixMulCUBLAS_test
+  522  ls
+  523  make clean
+  524  make
+  525  vim matrixMulCUBLAS.cpp
+  526  make clean
+  527  make
+  528  ./matrixMulCUBLAS
+  529  nvprof --print-gpu-trace ./matrixMulCUBLAS
+  530  sudo nvprof --print-gpu-trace ./matrixMulCUBLAS
+  531  ls -al
+  532  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS
+  533  :q
+  534  dropbox status
+  535  vim matrixMulCUBLAS.cpp
+  536  make clean
+  537  make
+  538  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS
+  539  cd ..
+  540  cp -a matrixMulCUBLAS_test matrixMulCUBLAS_parallel
+  541  cp -a matrixMulCUBLAS_test matrixMulCUBLAS_sequential
+  542  cd matrixMulCUBLAS_sequential
+  543  vim matrixMulCUBLAS.cpp
+  544  make clean
+  545  make
+  546  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS
+  547  cd ..
+  548  mv matrixMulCUBLAS_test matrixMulCUBLAS_parallel_wait_event
+  549  cd matrixMulCUBLAS_parallel_wait_event
+  550  ls
+  551  mv matrixMulCUBLAS.cpp matrixMulCUBLAS.cu
+  552  vim Makefile
+  553  make clean
+  554  make
+  555  vim matrixMulCUBLAS.cu
+  556  make clean
+  557  make
+  558  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS
+  559  nvprof --print-gpu-trace ./matrixMulCUBLAS
+  560  which nvprof
+  561  ls -al /usr/local/cuda-8.0/bin
+  562  sudo nvprof --print-gpu-trace ./matrixMulCUBLAS
+  563  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.txt ./matrixMulCUBLAS
+  564  vim tmp.txt
+  565  vim matrixMulCUBLAS.cu
+  566  make clean
+  567  make
+  568  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS
+  569  cd ..
+  570  vim ls
+  571  ls
+  572  cp -a matrixMulCUBLAS_parallel_wait_event matrixMulCUBLAS_sequential_wait_event
+  573  cd matrixMulCUBLAS_sequential_wait_event
+  574  vim matrixMulCUBLAS.cu
+  575  make clean
+  576  make
+  577  vim matrixMulCUBLAS.cu
+  578  make clean
+  579  make
+  580  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 16
+  581  vim ../matrixMulCUBLAS_parallel_wait_event/matrixMulCUBLAS.cu
+  582  make clean
+  583  make
+  584  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 16
+  585  cd ..
+  586  cd matrixMulCUBLAS_parallel_wait_event
+  587  make clean
+  588  make
+  589  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 16
+  590  dropbox status
+  591  dropbox help
+  592  dropbox stop
+  593  ls
+  594  rm tmp.txt
+  595  bash runScript.sh
+  596  vim matmul_two_matrix_two_stream_matrix_size_32.txt
+  597  rm matmul_two_matrix_two_stream_matrix_size_*
+  598  vim runScript.sh
+  599  vim ../matrixMulCUBLAS_sequential_wait_event/runScript.sh
+  600  vim runScript.sh
+  601  dropbox status
+  602  dropbox start
+  603  dropbox status
+  604  vim runScript.sh
+  605  dropbox status
+  606  vim runScript.sh
+  607  dropbox help
+  608  dropbox filestatus
+  609  dropbox ls
+  610  dropbox filestatus
+  611  cd ..
+  612  cd
+  613  cd Dropbox
+  614  cd PhD/PhD.Year2.2/IBM/IBM-code/NVIDIA_CUDA-8.0_Samples/0_Simple/matrixMulCUBLAS_parallel_wait_event
+  615  ls
+  616  vim runScript.sh
+  617  bash runScript.sh
+  618  vim ../matrixMulCUBLAS_sequential_wait_event/runScript.sh
+  619  dropbox filestatus
+  620  cd ..
+  621  cd 0_Simple/matrixMulCUBLAS_sequential_wait_event
+  622  ls
+  623  vim runScript.sh
+  624  ls
+  625  ls ../matrixMulCUBLAS_parallel_wait_event
+  626  rm ../matrixMulCUBLAS_parallel_wait_event/runScript\ \(Hu\ Yitao\'s\ conflicted\ copy\ 2016-11-10\).sh
+  627  ls
+  628  bash runScript.sh
+  629  cd cd ..
+  630  cd ..
+  631  mv NVIDIA_CUDA-8.0_Samples ../../../PhD.Year3.1/IBM
+  632  ls
+  633  cd ..
+  634  dropbox status
+  635  ls
+  636  cd ..
+  637  cd PhD.Year3.1
+  638  ls
+  639  cd IBM/NVIDIA_CUDA-8.0_Samples
+  640  ls
+  641  cd 0_Simple
+  642  ;ls
+  643  ls
+  644  cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_data_analysis
+  645  ls
+  646  mkdir data
+  647  cd data
+  648  mkdir parallel_wait_event
+  649  mkdir sequential_wait_event
+  650  ls
+  651  cd matrixMulCUBLAS_parallel_wait_event
+  652  ls
+  653  mv matmul_two_matrix_two_stream_matrix_size_* ...
+  654  ls
+  655  cd ..
+  656  ls
+  657  cd matrixMulCUBLAS_parallel_wait_event
+  658  cd ...
+  659  ls
+  660  mv matmul_two_matrix_two_stream_matrix_size_* ../NVIDIA_data_analysis/data/parallel_wait_event
+  661  cd 0_Simple/matrixMulCUBLAS_sequential_wait_event
+  662  ls
+  663  mv matmul_two_matrix_two_stream_matrix_size_* ../../../NVIDIA_data_analysis/data/sequential_wait_event
+  664  cd ..
+  665  cd ...
+  666  ls
+  667  cd NVIDIA_data_analysis
+  668  ls
+  669  cd data/parallel_wait_event
+  670  ls
+  671  ls -al
+  672  vim matmul_two_matrix_two_stream_matrix_size_32.txt
+  673  dropbox status
+  674  cd ..
+  675  cd sequential_wait_event
+  676  ls
+  677  vim matmul_two_matrix_two_stream_matrix_size_32.txt
+  678  cd ..
+  679  cd NVIDIA_CUDA-8.0_Samples
+  680  ls
+  681  cd 0_Simple/matrixMulCUBLAS_parallel_wait_event
+  682  ls
+  683  vim matrixMulCUBLAS.cu
+  684  make clean
+  685  make
+  686  bash runScript.sh
+  687  dropbox status
+  688  ls
+  689  mv matmul_two_matrix_two_stream_matrix_size_* ../../../NVIDIA_data_analysis/data/parallel_wait_event
+  690  vim matrixMulCUBLAS.cu
+  691  make clean
+  692  make
+  693  ls
+  694  bash runScript.sh
+  695  ls
+  696  mkdir parallel_wait_event_1000
+  697  mkdir sequential_wait_event_1000
+  698  ls
+  699  mv matmul_two_matrix_two_stream_matrix_size_* ../../../NVIDIA_data_analysis/data/parallel_wait_event_1000
+  700  cd ..
+  701  cd matrixMulCUBLAS_sequential_wait_event
+  702  vim matrixMulCUBLAS.cu
+  703  make clean
+  704  make
+  705  bash runScript.sh
+  706  mv matmul_two_matrix_two_stream_matrix_size_* ../../../NVIDIA_data_analysis/data/sequential_wait_event_1000
+  707  ls
+  708  cd parallel_wait_event_1000
+  709  ls
+  710  vim matmul_two_matrix_two_stream_matrix_size_32.txt
+  711  vim matmul_two_matrix_two_stream_matrix_size_64.txt
+  712  vim matmul_two_matrix_two_stream_matrix_size_96.txt
+  713  vim matmul_two_matrix_two_stream_matrix_size_768.txt
+  714  vim matmul_two_matrix_two_stream_matrix_size_1024.txt
+  715  vim matmul_two_matrix_two_stream_matrix_size_1536.txt
+  716  cd ..
+  717  ls
+  718  cd ..
+  719  ls
+  720  cd ..
+  721  ls
+  722  vim plot_speedup_ratio_between_parallel_and_sequential_with_wait_event.py
+  723  dropbox status
+  724  vim plot_speedup_ratio_between_parallel_and_sequential_with_wait_event.py
+  725  ls
+  726  vim plot_speedup_ratio_between_parallel_and_sequential_with_wait_event.py
+  727  python plot_speedup_ratio_between_parallel_and_sequential_with_wait_event.py
+  728  sudo apt-get build-dep python-matplotlib
+  729  python plot_speedup_ratio_between_parallel_and_sequential_with_wait_event.py
+  730  cd
+  731  cd Documents
+  732  ls
+  733  mkdir tools
+  734  cd tools
+  735  git clone git://github.com/matplotlib/matplotlib.git
+  736  cd matplotlib
+  737  python setup.py install
+  738  pip install matplotlib
+  739  python plot_speedup_ratio_between_parallel_and_sequential_with_wait_event.py
+  740  sudo pip install matplotlib
+  741  python plot_speedup_ratio_between_parallel_and_sequential_with_wait_event.py
+  742  ls
+  743  cd data
+  744  ls
+  745  cd parallel_wait_event_1000
+  746  ls
+  747  vim matmul_two_matrix_two_stream_matrix_size_32.txt
+  748  cd ..
+  749  cd sequential_wait_event_1000
+  750  vim matmul_two_matrix_two_stream_matrix_size_32.txt
+  751  cd ..
+  752  mkdir parallel_wait_event_100
+  753  mkdir sequential_wait_event_100
+  754  cd
+  755  cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples
+  756  ls
+  757  cd 0_Simple/matrixMulCUBLAS_parallel_wait_event
+  758  vim matrixMulCUBLAS.cu
+  759  ls
+  760  bash runScript.sh
+  761  mv matmul_two_matrix_two_stream_matrix_size_* ../../../NVIDIA_data_analysis/data/parallel_wait_event_100
+  762  cd parallel_wait_event_100
+  763  ls
+  764  cd ..
+  765  cd matrixMulCUBLAS_sequential_wait_event
+  766  vim matrixMulCUBLAS.cu
+  767  make clean
+  768  make
+  769  bash runScript.sh
+  770  ls
+  771  mv matmul_two_matrix_two_stream_matrix_size_* ../../../NVIDIA_data_analysis/data/sequential_wait_event_100/
+  772  cd ..
+  773  cd sequential_wait_event_100
+  774  ls
+  775  cd ..
+  776  ls
+  777  vim data/parallel_wait_event_100/matmul_two_matrix_two_stream_matrix_size_32.txt
+  778  vim plot_speedup_ratio_between_parallel_and_sequential_with_wait_event.py
+  779  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.txt ./matrixMulCUBLAS 16
+  780  vim tmp.txt
+  781  vim data/sequential_wait_event_100/matmul_two_matrix_two_stream_matrix_size_32.txt
+  782  vim data/parallel_wait_event_100/matmul_two_matrix_two_stream_matrix_size_32.txt
+  783  cd data/parallel_wait_event_100
+  784  ls
+  785  rm *
+  786  ls
+  787  cd ..
+  788  cd matrixMulCUBLAS_parallel_wait_event
+  789  vim matrixMulCUBLAS.cu
+  790  make clean
+  791  make
+  792  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.txt ./matrixMulCUBLAS 16
+  793  vim tmp.txt
+  794  bash runScript.sh
+  795  mv matmul_two_matrix_two_stream_matrix_size_* ../../../NVIDIA_data_analysis/data/parallel_wait_event_100/
+  796  cd parallel_wait_event_100
+  797  ls
+  798  vim matmul_two_matrix_two_stream_matrix_size_32.txt
+  799  cd ..
+  800  ls
+  801  cd ..
+  802  ls
+  803  vim plot_speedup_ratio_between_parallel_and_sequential_with_wait_event.py
+  804  vim data/parallel_wait_event_100/matmul_two_matrix_two_stream_matrix_size_32.txt
+  805  vim plot_speedup_ratio_between_parallel_and_sequential_with_wait_event.py
+  806  vim data/sequential_wait_event_100/matmul_two_matrix_two_stream_matrix_size_768.txt
+  807  vim plot_speedup_ratio_between_parallel_and_sequential_with_wait_event.py
+  808  python plot_speedup_ratio_between_parallel_and_sequential_with_wait_event.py
+  809  dropbox status
+  810  cd ..
+  811  cp -a matrixMulCUBLAS matrixMulCUBLAS_barrier
+  812  ls
+  813  cd matrixMulCUBLAS_barrier
+  814  ls
+  815  cp ../../../../../PhD.Year2.2/IBM/IBM-code/NVIDIA_CUDA-7.5_Samples/0_Simple/matrixMulCUBLAS-two_stream_two_matrix_parallel_barrier/matrixMulCUBLAS.cu
+  816  cp ../../../../../PhD.Year2.2/IBM/IBM-code/NVIDIA_CUDA-7.5_Samples/0_Simple/matrixMulCUBLAS-two_stream_two_matrix_parallel_barrier/matrixMulCUBLAS.cu ./
+  817  ls
+  818  rm matrixMulCUBLAS.cpp
+  819  vim matrixMulCUBLAS.cu
+  820  make clean
+  821  make
+  822  vim matrixMulCUBLAS.cu
+  823  vim Makefile
+  824  make clean
+  825  make
+  826  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.txt ./matrixMulCUBLAS 16
+  827  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.txt ./matrixMulCUBLAS 8
+  828  vim tmp.txt
+  829  dropbox status
+  830  cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples
+  831  ls
+  832  cd 0_Simple
+  833  ls
+  834  cd matrixMulCUBLAS_barrier
+  835  make clean
+  836  make
+  837  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.txt ./matrixMulCUBLAS 8
+  838  vim tmp.txt
+  839  cd ..
+  840  grep -r "clock_block" .
+  841  cd 6_Advanced/simpleHyperQ
+  842  make clean
+  843  make
+  844  ./simpleHyperQ
+  845  cd ..
+  846  cd concurrentKernels
+  847  make clean
+  848  make
+  849  ./concurrentKernels
+  850  cd ..
+  851  cd 0_Simple
+  852  cp -a matrixMulCUBLAS_barrier matrixMulCUBLAS_barrier_with_only_one_wait
+  853  cd matrixMulCUBLAS_barrier_with_only_one_wait
+  854  vim matrixMulCUBLAS.cu
+  855  make clean
+  856  make
+  857  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.txt ./matrixMulCUBLAS 8
+  858  vim tmp.txt
+  859  dropbox status
+  860  cd Dropbox
+  861  dropbox filestatus
+  862  rm -rf tensorflow
+  863  dropbox filestatus
+  864  dropbox status
+  865  dropbox filestatus
+  866  cd PhD
+  867  ls
+  868  dropbox filestatus
+  869  cd PhD.Year3.1
+  870  dropbox filestatus
+  871  cd IBM
+  872  dropbox filestatus
+  873  cd NVIDIA_data_analysis
+  874  dropbox filestatus
+  875  cd ..
+  876  dropbox filestatus
+  877  cd
+  878  dropbox status
+  879  cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples/0_Simple/matrixMulCUBLAS_barrier_with_only_one_wait
+  880  ls
+  881  make clean
+  882  make
+  883  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+  884  cd ..
+  885  ls
+  886  cp -a matrixMulCUBLAS_parallel_wait_event matrixMulCUBLAS_barrier_enqueue_and_useless
+  887  ssh new
+  888  ifconfig
+  889  cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples
+  890  ls
+  891  dropbox status
+  892  cd 0_Simple
+  893  ls
+  894  cd matrixMulCUBLAS_barrier_enqueue_and_useless
+  895  vim matrixMulCUBLAS.cu
+  896  make clean
+  897  make
+  898  vim matrixMulCUBLAS.cu
+  899  make clean
+  900  make
+  901  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+  902  make clean
+  903  make
+  904  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+  905  vim matrixMulCUBLAS.cu
+  906  make clean
+  907  make
+  908  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+  909  vim matrixMulCUBLAS.cu
+  910  make clean
+  911  make
+  912  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.txt ./matrixMulCUBLAS 8
+  913  vim tmp.txt
+  914  vim matrixMulCUBLAS.cu
+  915  make clean
+  916  make
+  917  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.txt ./matrixMulCUBLAS 8
+  918  vim tmp.txt
+  919  vim matrixMulCUBLAS.cu
+  920  make clean
+  921  make
+  922  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.txt ./matrixMulCUBLAS 8
+  923  vim tmp.txt
+  924  vim matrixMulCUBLAS.cu
+  925  make clean
+  926  make
+  927  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.txt ./matrixMulCUBLAS 8
+  928  vim tmp.txt
+  929  vim matrixMulCUBLAS.cu
+  930  make clean
+  931  make
+  932  nvprof --print-gpu-trace --unified-memory-profiling off --log-file output-10M.txt ./matrixMulCUBLAS 8
+  933  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+  934  vim matrixMulCUBLAS.cu
+  935  make clean
+  936  make
+  937  nvprof --print-gpu-trace --unified-memory-profiling off --log-file output-1M.txt ./matrixMulCUBLAS 8
+  938  vim output-10M.txt
+  939  rm output-10M.txt
+  940  vim output-1M.txt
+  941  vim matrixMulCUBLAS.cu
+  942  make clean
+  943  make
+  944  nvprof --print-gpu-trace --unified-memory-profiling off --log-file output-5M.txt ./matrixMulCUBLAS 8
+  945  vim matrixMulCUBLAS.cu
+  946  make clean
+  947  make
+  948  nvprof --print-gpu-trace --unified-memory-profiling off --log-file output-2M.txt ./matrixMulCUBLAS 8
+  949  vim output-2M.txt
+  950  ls
+  951  rm output-*
+  952  vim matrixMulCUBLAS.cu
+  953  make clean
+  954  make
+  955  nvprof --print-gpu-trace --unified-memory-profiling off --log-file output-1M.txt ./matrixMulCUBLAS 8
+  956  vim output-1M.txt
+  957  cd ..
+  958  cd asyncAPI
+  959  make clean
+  960  make
+  961  ./asyncAPI
+  962  cd ..
+  963  cd cdpSimplePrint
+  964  make clean
+  965  make
+  966  ./cdpSimplePrint
+  967  cd ..
+  968  cd cdpSimpleQuicksort
+  969  make clean
+  970  make
+  971  ./cdpSimpleQuicksort
+  972  nvprof --print-gpu-trace --unified-memory-profiling off ./cdpSimpleQuicksort
+  973  nvprof --print-api-trace --unified-memory-profiling off ./cdpSimpleQuicksort
+  974  cd ..
+  975  cd matrixMulCUBLAS_barrier
+  976  vim matrixMulCUBLAS.cu
+  977  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+  978  nvprof --print-api-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+  979  cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples
+  980  ls
+  981  cd 0_Simple
+  982  cd matrixMulCUBLAS_barrier_with_only_one_wait
+  983  make clean
+  984  make
+  985  nvprof --print-api-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+  986  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+  987  cd ..
+  988  cd 6_Advanced
+  989  ls
+  990  cd ..
+  991  ls
+  992  grep -r "batch" .
+  993  cd 7_CUDALibraries
+  994  ls
+  995  cd batchCUBLAS
+  996  ls
+  997  vim batchCUBLAS.cpp
+  998  cd ..
+  999  cd 0_Simple/asyncAPI
+ 1000  make clean
+ 1001  make
+ 1002  ./asyncAPI
+ 1003  dropbox status
+ 1004  dropbox start
+ 1005  dropbox status
+ 1006  cd ..
+ 1007  cd matrixMulCUBLAS_parallel_wait_event_four_streams
+ 1008  vim matrixMulCUBLAS.cu
+ 1009  make clean
+ 1010  make
+ 1011  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1012  make clean
+ 1013  make
+ 1014  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1015  vim matrixMulCUBLAS.cu
+ 1016  ls
+ 1017  make clean
+ 1018  make
+ 1019  vim matrixMulCUBLAS.cu
+ 1020  make clean
+ 1021  make
+ 1022  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1023  vim matrixMulCUBLAS.cu
+ 1024  make clean
+ 1025  make
+ 1026  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1027  make clean
+ 1028  make
+ 1029  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1030  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 6
+ 1031  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 4
+ 1032  make clean
+ 1033  make
+ 1034  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1035  vim matrixMulCUBLAS.cu
+ 1036  make clean
+ 1037  make
+ 1038  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1039  vim matrixMulCUBLAS.cu
+ 1040  make clean
+ 1041  make
+ 1042  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1043  cd ..
+ 1044  cd matrixMulCUBLAS_parallel_wait_event
+ 1045  vim matrixMulCUBLAS.cu
+ 1046  make clean
+ 1047  make
+ 1048  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1049  vim matrixMulCUBLAS.cu
+ 1050  make clean
+ 1051  make
+ 1052  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1053  vim matrixMulCUBLAS.cu
+ 1054  make clean
+ 1055  make
+ 1056  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1057  cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples/0_Simple/matrixMulCUBLAS_parallel_wait_event_four_streams
+ 1058  ls
+ 1059  vim matrixMulCUBLAS.cu
+ 1060  make clean
+ 1061  make
+ 1062  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1063  cd ..
+ 1064  cd NVIDIA_data_analysis
+ 1065  ls
+ 1066  python plot_running_time_parallel_with_wait_four_streams.py
+ 1067  dropbox status
+ 1068  dropbox start
+ 1069  dropbox status
+ 1070  cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples/0_Simple/matrixMulCUBLAS_parallel_wait_event_four_streams
+ 1071  ls
+ 1072  make clean
+ 1073  make
+ 1074  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1075  vim matrixMulCUBLAS.cu
+ 1076  make clean
+ 1077  make
+ 1078  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1079  vim matrixMulCUBLAS.cu
+ 1080  make clean
+ 1081  make
+ 1082  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1083  cd ..
+ 1084  grep -r "cudaStreamWaitEvent" .
+ 1085  grep -r "cudaEventQuery" .
+ 1086  cd 0_Simple/matrixMulCUBLAS_parallel_wait_event_four_streams
+ 1087  ls
+ 1088  vim matrixMulCUBLAS.cu
+ 1089  make clean
+ 1090  make
+ 1091  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1092  vim matrixMulCUBLAS.cu
+ 1093  make clean
+ 1094  make
+ 1095  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1096  vim matrixMulCUBLAS.cu
+ 1097  make clean
+ 1098  make
+ 1099  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1100  cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples/0_Simple/matrixMulCUBLAS_parallel_wait_event
+ 1101  ls
+ 1102  vim matrixMulCUBLAS.cu
+ 1103  make clean
+ 1104  make
+ 1105  nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./matrixMulCUBLAS 8
+ 1106  ls
+ 1107  nvvp
+ 1108  cd ..
+ 1109  cd .
+ 1110  cd ..
+ 1111  cd 6_Advanced
+ 1112  ls
+ 1113  cd concurrentKernels
+ 1114  ls
+ 1115  make clean
+ 1116  make
+ 1117  nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./concurrentKernels
+ 1118  nvvp
+ 1119  dropbox status
+ 1120  dropbox start
+ 1121  cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples/0_Simple
+ 1122  ls
+ 1123  dropbox status
+ 1124  cd matrixMulCUBLAS_parallel_wait_event_four_streams
+ 1125  make clean
+ 1126  make
+ 1127  nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./concurrentKernels
+ 1128  nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./matrixMulCUBLAS
+ 1129  cd ..
+ 1130  cd 6_Advanced/concurrentKernels
+ 1131  ls
+ 1132  make clean
+ 1133  make
+ 1134  nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./concurrentKernels
+ 1135  cd ../../
+ 1136  ls
+ 1137  cd 0_Simple
+ 1138  ls
+ 1139  cd matrixMulCUBLAS_parallel_wait_event_four_streams
+ 1140  make clean
+ 1141  make
+ 1142  nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./matrixMulCUBLAS
+ 1143  ./matrixMulCUBLAS
+ 1144  make clean
+ 1145  make
+ 1146  ./matrixMulCUBLAS
+ 1147  make clean
+ 1148  make
+ 1149  ./matrixMulCUBLAS
+ 1150  cd ..
+ 1151  cd matrixMulCUBLAS_parallel_wait_event
+ 1152  make clean
+ 1153  make
+ 1154  ./matrixMulCUBLAS
+ 1155  nvcc -version
+ 1156  nvcc --version
+ 1157  cd ..
+ 1158  cd matrixMulCUBLAS
+ 1159  ls
+ 1160  make clean
+ 1161  make
+ 1162  ./matrixMulCUBLAS
+ 1163  cd ..
+ 1164  cd matrixMulCUBLAS_parallel
+ 1165  ls
+ 1166  make clean
+ 1167  make
+ 1168  ./matrixMulCUBLAS
+ 1169  nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS
+ 1170  cd ..
+ 1171  cd matrixMulCUBLAS_parallel_wait_event
+ 1172  make clean
+ 1173  make
+ 1174  ./matrixMulCUBLAS
+ 1175  make clean
+ 1176  make
+ 1177  ./matrixMulCUBLAS 8
+ 1178  cd ..
+ 1179  cd matrixMulCUBLAS_parallel_wait_event_four_streams
+ 1180  ls
+ 1181  vim matrixMulCUBLAS.cu
+ 1182  make clean
+ 1183  make
+ 1184  ./matrixMulCUBLAS
+ 1185  ./matrixMulCUBLAS 8
+ 1186  make clean
+ 1187  vim matrixMulCUBLAS.cu
+ 1188  make clean
+ 1189  make
+ 1190  vim matrixMulCUBLAS.cu
+ 1191  make clean
+ 1192  make
+ 1193  nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./matrixMulCUBLAS
+ 1194  nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./matrixMulCUBLAS 8
+ 1195  ls
+ 1196  nvvp
+ 1197* cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples/0_Simple/matrixMulCUBLAS_barrier
+ 1198* ls
+ 1199* make clean
+ 1200* make
+ 1201* vim matrixMulCUBLAS.cu
+ 1202* nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./matrixMulCUBLAS 8
+ 1203* ls
+ 1204* vim tmp.nvprof
+ 1205* cd ..
+ 1206* cd matrixMulCUBLAS
+ 1207* ls
+ 1208* make clean
+ 1209* make
+ 1210* ./matrixMulCUBLAS
+ 1211* cd ..
+ 1212* ls
+ 1213* cd matrixMul
+ 1214* ls
+ 1215* make clean
+ 1216* make
+ 1217* ./matrixMul
+ 1218* cd ..
+ 1219* ls
+ 1220* cd ..
+ 1221* cd 6_Advanced
+ 1222* ls
+ 1223* cd concurrentKernels
+ 1224* ls
+ 1225* make clean
+ 1226* make
+ 1227* ./concurrentKernels
+ 1228* cd ..
+ 1229* cd 0_Simple/matrixMulCUBLAS_parallel_wait_event_four_streams_measure_enqueue_overhead
+ 1230* make clean
+ 1231* make
+ 1232* ./matrixMulCUBLAS
+ 1233* ./matrixMulCUBLAS 8
+ 1234* make clean
+ 1235* make
+ 1236* ./matrixMulCUBLAS 8
+ 1237* cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples
+ 1238* grep -r "clock_block" .
+ 1239* cd 0_Simple/matrixMulCUBLAS_parallel_wait_event_four_streams_no_multiplication
+ 1240* vim matrixMulCUBLAS.cu
+ 1241* make clean
+ 1242* make
+ 1243* nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./matrixMulCUBLAS 8
+ 1244* vim matrixMulCUBLAS.cu
+ 1245* make clean
+ 1246* make
+ 1247* nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./matrixMulCUBLAS 8
+ 1248* nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./matrixMulCUBLAS 16
+ 1249* ls
+ 1250* make clean
+ 1251* ls
+ 1252* make
+ 1253* nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./matrixMulCUBLAS 64
+ 1254* nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 64
+ 1255* vim matrixMulCUBLAS.cu
+ 1256* make clean
+ 1257* make
+ 1258* nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1259* vim matrixMulCUBLAS.cu
+ 1260* make clean
+ 1261* make
+ 1262* nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1263* vim matrixMulCUBLAS.cu
+ 1264* make clean
+ 1265* make
+ 1266* nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1267* cd ..
+ 1268* cd matrixMul
+ 1269* make clean
+ 1270* make
+ 1271* ./matrixMul
+ 1272* cd ..
+ 1273* cd matrixMulCUBLAS
+ 1274* make clean
+ 1275* make
+ 1276* ./matrixMulCUBLAS
+ 1277* cd ..
+ 1278* cd matrixMulCUBLAS_parallel_wait_event_four_streams_measure_enqueue_overhead
+ 1279* make clean
+ 1280* make
+ 1281* ./matrixMulCUBLAS 8
+ 1282* cd Downloads
+ 1283* ls
+ 1284* cd t
+ 1285* cd tmp
+ 1286* ls
+ 1287* cd ..
+ 1288* mkdir test
+ 1289* cd test
+ 1290* ls
+ 1291* vim test.cpp
+ 1292* gcc test.cpp
+ 1293* vim test.cpp
+ 1294* gcc test.cpp
+ 1295* vim test.cpp
+ 1296* gcc test.cpp
+ 1297* vim test.cpp
+ 1298* gcc test.cpp
+ 1299* vim test.cpp
+ 1300* gcc test.cpp
+ 1301* ./a.out
+ 1302* cd ..
+ 1303* cd matrixMul
+ 1304* ls
+ 1305* make clean
+ 1306* make
+ 1307* ./matrixMul
+ 1308* make clean
+ 1309* make
+ 1310* make clean
+ 1311* make
+ 1312* make clean
+ 1313* make
+ 1314* ./matrixMul
+ 1315* nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMul
+ 1316* make clean
+ 1317* make
+ 1318* nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMul
+ 1319* cd ..
+ 1320* cd matrixMulCUBLAS_parallel_wait_event_four_streams
+ 1321* make clean
+ 1322* make
+ 1323* cd ..
+ 1324* cd matrixMulCUBLAS_parallel_wait_event_four_streams
+ 1325* ls
+ 1326* nvvp
+ 1327* dropbox status
+ 1328* cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples
+ 1329* ls
+ 1330* grep -r "cublasSgemmBatched" .
+ 1331* make clean
+ 1332* make
+ 1333* source ~/.zshrc
+ 1334* vim ~/.zshrc
+ 1335* echo $CUDA_HOME
+ 1336* cd /usr/local/cuda-8.0
+ 1337* ls
+ 1338* cd bin
+ 1339* s
+ 1340* ls
+ 1341* cd ..
+ 1342* cd include
+ 1343* ls
+ 1344* cd ..
+ 1345* ls
+ 1346* cd cuda-7.5
+ 1347* ls
+ 1348* cd bin
+ 1349* ls
+ 1350* cd ..
+ 1351* cd cuda-8.0
+ 1352* ls
+ 1353* cd bin
+ 1354* ls
+ 1355* cd ..
+ 1356* ls
+ 1357* cd ..
+ 1358* ls
+ 1359* ls -al
+ 1360* ls
+ 1361* mv cuda-8.0 cuda-8.0-backup
+ 1362* sudo mv cuda-8.0 cuda-8.0-backup
+ 1363* ls
+ 1364* lspci | grep -i nvidia
+ 1365* uname -m && cat /etc/*release
+ 1366* gcc --version
+ 1367* cd
+ 1368* sudo dpkg -i cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64.deb
+ 1369* cd Downloads
+ 1370* ls
+ 1371* cd cuda
+ 1372* ls
+ 1373* cd ..
+ 1374* wget https://developer.nvidia.com/compute/cuda/8.0/prod/local_installers/cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64-deb
+ 1375* ls
+ 1376* sudo dpkg -i cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64.deb
+ 1377* cd tmp
+ 1378* ls
+ 1379* rm -rf NVIDIA_CUDA-8.0_Samples
+ 1380* ls
+ 1381* cd ..
+ 1382* ls
+ 1383* mv cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64-deb tmp
+ 1384* ls
+ 1385* cd tmp
+ 1386* ls
+ 1387* sudo dpkg -i cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64-deb
+ 1388* ls
+ 1389* sudo apt-get update
+ 1390* sudo apt-get install cuda
+ 1391* cd
+ 1392* cd /usr/local
+ 1393* ls
+ 1394* ls -al
+ 1395* cd cuda-7.0
+ 1396* ls
+ 1397* cd bin
+ 1398* ls
+ 1399* cd ..
+ 1400* cd cuda-7.5
+ 1401* ls
+ 1402* cd bin
+ 1403* ls
+ 1404* cd ..
+ 1405* ls
+ 1406* vim ~/.zshrc
+ 1407* source ~/.zshrc
+ 1408* make clean
+ 1409* cd 
+ 1410* cd Downloads
+ 1411* ls
+ 1412* rm -rf NVIDIA_CUDA-7.5_Samples
+ 1413* cuda-install-samples-7.5.sh
+ 1414* cuda-install-samples-7.5.sh ./
+ 1415* cd NVIDIA_CUDA-7.5_Samples
+ 1416* ls
+ 1417* grep -r "cublasSgemmBatched" .
+ 1418* cd ..
+ 1419* cuda-install-samples-7.5.sh
+ 1420* cuda-install-samples-7.5.sh ./
+ 1421* cd NVIDIA_CUDA-7.5_Samples
+ 1422* ls
+ 1423* cd 7_CUDALibraries
+ 1424* ls
+ 1425* cd batchCUBLAS
+ 1426* sl
+ 1427* ls
+ 1428* make clean
+ 1429* make
+ 1430* ./batchCUBLAS
+ 1431* vim batchCUBLAS.cpp
+ 1432* make clean
+ 1433* make
+ 1434* ls
+ 1435* ./batchCUBLAS
+ 1436* vim ../../../NVIDIA_CUDA-8.0_Samples/0_Simple/matrixMulCUBLAS_parallel_wait_event_four_streams/matrixMulCUBLAS.cu 
+ 1437* vim batchCUBLAS.cpp
+ 1438* make clean
+ 1439* make
+ 1440* ./batchCUBLAS 128
+ 1441* ./batchCUBLAS 256
+ 1442* ./batchCUBLAS 512
+ 1443* ./batchCUBLAS 256 > tmp.txt
+ 1444* vim runTest.sh
+ 1445* bash runTest.sh
+ 1446* cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_data_analysis
+ 1447* ls
+ 1448* python plot_batchCUBLAS.py
+ 1449* ls
+ 1450* vim runTest.sh
+ 1451* bash runTest.sh
+ 1452* python plot_batchCUBLAS.py
+ 1453* ls
+ 1454* python plot_batchCUBLAS.py
+ 1455* vim plot_batchCUBLAS.py
+ 1456* python plot_batchCUBLAS.py
+ 1457* vim plot_batchCUBLAS.py
+ 1458* python plot_batchCUBLAS.py
+ 1459* ls
+ 1460* python plot_batchCUBLAS_s.py
+ 1461* python plot_batchCUBLAS_d.py
+ 1462* vim ../../../NVIDIA_CUDA-8.0_Samples/0_Simple/matrixMulCUBLAS_parallel_wait_event_four_streams/matrixMulCUBLAS.cu 
+ 1463* cd ..
+ 1464* cd NVIDIA_CUDA-7.5_Samples
+ 1465* ls
+ 1466* cd 7_CUDALibraries
+ 1467* cd batchCUBLAS
+ 1468* ls
+ 1469* make clean
+ 1470* make
+ 1471* ./batchCUBLAS 128
+ 1472* dropbox status
+ 1473* ./batchCUBLAS
+ 1474* pwd
+ 1475* source ~/.zshrc
+ 1476* ./batchCUBLAS
+ 1477* ./batchCUBLAS 128
+ 1478* nvprof --print-gpu-trace --unified-memory-profiling off ./batchCUBLAS 128
+ 1479* ./batchCUBLAS 128
+ 1480* nvprof ./batchCUBLAS 128
+ 1481* cd Downloads
+ 1482* ls
+ 1483* cd NVIDIA_CUDA-7.5_Samples/7_CUDALibraries/batchCUBLAS
+ 1484* make clean
+ 1485* make
+ 1486* nvprof ./batchCUBLAS 128
+ 1487* cd ..
+ 1488* cd 6_Advanced/concurrentKernels
+ 1489* make clean
+ 1490* make
+ 1491* nvprof ./concurrentKernels
+ 1492* vim batchCUBLAS.cpp
+ 1493* make clean
+ 1494* make
+ 1495* nvprof ./batchCUBLAS 128
+ 1496* which nvprof
+ 1497* cd ..
+ 1498* cd 0_Simple/matrixMulCUBLAS
+ 1499* ls
+ 1500* make clean
+ 1501* make
+ 1502* ./matrixMulCUBLAS
+ 1503* nvprof ./matrixMulCUBLAS
+ 1504* nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS
+ 1505* nvprof ./batchCUBLAS
+ 1506* nvprof --print-gpu-trace --unified-memory-profiling off ./batchCUBLAS
+ 1507* nvprof --print-gpu-trace --unified-memory-profiling off ./batchCUBLAS 128
+ 1508* cd ..
+ 1509* ls
+ 1510* cd test
+ 1511* ls
+ 1512* cd ..
+ 1513* cd tmp
+ 1514* ls
+ 1515* rm cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64-deb
+ 1516* wget https://developer.nvidia.com/compute/cuda/8.0/prod/local_installers/cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64-deb
+ 1517* sudo dpkg -i cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64-deb
+ 1518* sudo apt-get update
+ 1519* sudo /usr/local/cuda-7.5/bin/uninstall_cuda_7.5.pl
+ 1520* sudo apt-get install cuda
+ 1521* cd /usr/local/
+ 1522* ls
+ 1523* mv cuda-8.0-backup cuda-8.0
+ 1524* sudo mv cuda-8.0-backup cuda-8.0
+ 1525* ls
+ 1526* ls -al
+ 1527* rm -rf cuda
+ 1528* sudo rm -rf cuda
+ 1529* cd cuda-8.0
+ 1530* cd bin
+ 1531* ls
+ 1532* sudo ./uninstall_cuda_8.0.pl
+ 1533* ls
+ 1534* cd ..
+ 1535* ls
+ 1536* cd ..
+ 1537* ls
+ 1538* cd cuda-7.5
+ 1539* ls
+ 1540* cd ..
+ 1541* rm -rf cuda-7.5
+ 1542* sudo mv cuda-7.5 cuda-7.5-backup
+ 1543* sudo mv cuda-8.0 cuda-8.0-backup
+ 1544* cd
+ 1545* cd Downloads
+ 1546* cd tmp
+ 1547* sudo apt-get install cuda
+ 1548* sudo apt-get install cuda-runtime-8-0
+ 1549* sudo apt-get purge nvidia-*
+ 1550* sudo apt-get purge nvidia-opencl-icd-367
+ 1551* sudo apt-get update
+ 1552* sudo apt-get install cuda
+ 1553* sudo apt-get install cuda-runtime-8-0
+ 1554* sudo apt-get install cuda-driver-dev-8-0
+ 1555* sudo apt-get install cuda-runtime-8-0
+ 1556* sudo apt-get install cuda
+ 1557* sudo apt-get purge nvidia-367
+ 1558* sudo apt-get autoremove
+ 1559* sudo apt-get install cuda
+ 1560* sudo apt-get install cuda-runtime-8-0
+ 1561* sudo apt-get install cuda-8-0
+ 1562* sudo apt-get install cuda-runtime-8-0
+ 1563* sudo apt-get install cuda-drivers
+ 1564* sudo apt-get install nvidia-settings
+ 1565* sudo apt-get install libfontconfig1
+ 1566* sudo apt-get install nvidia-settings
+ 1567* sudo apt-get install aptitude
+ 1568* sudo aptitude install cuda
+ 1569* cd /usr/local/cuda-8.0/
+ 1570* ls
+ 1571* cd lib64
+ 1572* ls
+ 1573* cd doc
+ 1574* ls
+ 1575* cd ..
+ 1576* ls
+ 1577* cd .
+ 1578* cd ..
+ 1579* ls
+ 1580* cd bin
+ 1581* ls
+ 1582* cd ..
+ 1583* cd
+ 1584* sudo apt-get install cuda
+ 1585* sudo apt-get install cuda-8-0
+ 1586* cat /proc/driver/nvidia/version
+ 1587* sudo apt-get install cuda-runtime-8-0
+ 1588* sudo apt-get install cuda-drivers
+ 1589* sudo apt-get install nvidia-settings
+ 1590* man apt-get
+ 1591* sudo apt-get -f install nvidia-settings
+ 1592* wsudo apt-get -f install
+ 1593* sudo apt-get -f install
+ 1594* sudo apt-get -f install cuda
+ 1595* sudo aptitude install cuda
+ 1596* cd /usr/local/cuda
+ 1597* ls
+ 1598* cd bin
+ 1599* ls
+ 1600* cd ..
+ 1601* ls
+ 1602* ls -al
+ 1603* cd cuda-8.0
+ 1604* ls
+ 1605* cd bin
+ 1606* ls
+ 1607* cd ..
+ 1608* vim ~/.zshrc
+ 1609* source ~/.zshrc
+ 1610* cd
+ 1611* nvcc -version
+ 1612* nvcc --version
+ 1613* cd
+ 1614* cd Downloads
+ 1615* ls
+ 1616* cd tmp
+ 1617* ls
+ 1618* rm cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64-deb
+ 1619* ls
+ 1620* cuda-install-samples-8.0.sh
+ 1621* cuda-install-samples-8.0.sh ./
+ 1622* ls
+ 1623* cd NVIDIA_CUDA-8.0_Samples/7_CUDALibraries/batchCUBLAS
+ 1624* make clean
+ 1625* make
+ 1626* ./batchCUBLAS
+ 1627* nvprof --print-gpu-trace --unified-memory-profiling off ./batchCUBLAS
+ 1628* source ~/.zshrc
+ 1629* cd ..
+ 1630* ls
+ 1631* cd NVIDIA_CUDA-8.0_Samples/0_Simple/matrixMulCUBLAS_barrier_enqueue_and_useless
+ 1632* ls
+ 1633* make clean
+ 1634* make
+ 1635* ./matrixMulCUBLAS
+ 1636* ./matrixMulCUBLAS 8
+ 1637* vim matrixMulCUBLAS.cu
+ 1638* cd ..
+ 1639* ls
+ 1640* cd matrixMulCUBLAS_barrier_with_only_one_wait
+ 1641* vim matrixMulCUBLAS.cu
+ 1642* make clean
+ 1643* make
+ 1644* ./matrixMulCUBLAS 8
+ 1645* nvprof --print-gpu-trace --unified-memory-profiling off ./matrixMulCUBLAS 8
+ 1646* cd ..
+ 1647* dropbox status
+ 1648* pwd
+ 1649* cd
+ 1650* cd NVIDIA_CUDA-8.0_Samples/7_CUDALibraries/batchCUBLAS
+ 1651* make clean
+ 1652* make
+ 1653* ./batchCUBLAS
+ 1654* nvprof --print-gpu-trace --unified-memory-profiling off ./batchCUBLAS
+ 1655* cd ..
+ 1656* cd 0_Simple/simpleIPC
+ 1657* make clean
+ 1658* make
+ 1659* dropbox status
+ 1660* ./simpleIPC
+ 1661* cd ..
+ 1662* cd simpleCallback
+ 1663* ls
+ 1664* make clean
+ 1665* make
+ 1666* ./simpleCallback
+ 1667* subl simpleCallback.cu
+ 1668* nvprof --print-gpu-trace --unified-memory-profiling off ./simpleCallback
+ 1669* nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.txt ./simpleCallback
+ 1670  cd Dropbox/PhD/PhD.Year3.1/IBM/NVIDIA_CUDA-8.0_Samples/0_Simple/simpleCallback
+ 1671  ls
+ 1672  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.nvprof ./simpleCallback
+ 1673  history
+ 1674  ls
+ 1675  nvprof --print-gpu-trace --unified-memory-profiling off --o tmp.nvprof ./simpleCallback
+ 1676  nvprof --print-gpu-trace --unified-memory-profiling off -o tmp.nvprof ./simpleCallback
+ 1677  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp.nvprof ./simpleCallback
+ 1678* nvvp
+ 1679  cd ..
+ 1680  cd matrixMulCUBLAS_parallel_wait_event_four_streams
+ 1681  ls
+ 1682  make clean
+ 1683  make
+ 1684  source ~/.zshrc
+ 1685  ./matrixMulCUBLAS
+ 1686  ./matrixMulCUBLAS 8
+ 1687  nvprof --print-gpu-trace --unified-memory-profiling off --log-file tmp-2.nvprof ./matrixMulCUBLAS 8

@@ -1,0 +1,19 @@
+==3938== NVPROF is profiling process 3938, command: ./matrixMulCUBLAS 8
+==3938== Profiling application: ./matrixMulCUBLAS 8
+==3938== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput           Device   Context    Stream  Name
+473.23ms  22.305us                    -               -         -         -         -  256.00KB  10.946GB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+473.31ms  23.136us                    -               -         -         -         -  256.00KB  10.552GB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+473.39ms  23.105us                    -               -         -         -         -  256.00KB  10.567GB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+473.47ms  23.040us                    -               -         -         -         -  256.00KB  10.596GB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+1.13541s  1.0560us                    -               -         -         -         -      112B  101.15MB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+1.13607s  35.360us              (2 4 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1         7  maxwell_sgemm_128x64_raggedMn_nn [269]
+1.13613s  892.59ms              (1 1 1)         (1 1 1)         8        0B        0B         -           -  TITAN X (Pascal         1        13  clock_block(long*, long) [277]
+1.13616s  486.97ms              (1 1 1)         (1 1 1)         8        0B        0B         -           -  TITAN X (Pascal         1        14  clock_block(long*, long) [282]
+2.02873s  30.976us              (2 4 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        14  maxwell_sgemm_128x64_raggedMn_nn [339]
+2.02873s  28.992us              (2 4 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        13  maxwell_sgemm_128x64_raggedMn_nn [312]
+2.02896s  20.097us                    -               -         -         -         -  256.00KB  12.148GB/s  TITAN X (Pascal         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.

@@ -1,0 +1,32 @@
+==31185== NVPROF is profiling process 31185, command: ./simpleCallback
+==31185== Profiling application: ./simpleCallback
+==31185== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput           Device   Context    Stream  Name
+419.59ms  37.632us                    -               -         -         -         -  390.63KB  9.8993GB/s  TITAN X (Pascal         1        13  [CUDA memcpy HtoD]
+419.66ms  37.025us                    -               -         -         -         -  390.63KB  10.062GB/s  TITAN X (Pascal         1        18  [CUDA memcpy HtoD]
+419.78ms  2.6880us            (196 1 1)       (512 1 1)         8        0B        0B         -           -  TITAN X (Pascal         1        18  incKernel(int*, int) [144]
+419.82ms  31.329us                    -               -         -         -         -  390.63KB  11.891GB/s  TITAN X (Pascal         1        18  [CUDA memcpy DtoH]
+419.95ms  36.929us                    -               -         -         -         -  390.63KB  10.088GB/s  TITAN X (Pascal         1        17  [CUDA memcpy HtoD]
+419.99ms  46.753us                    -               -         -         -         -  390.63KB  7.9680GB/s  TITAN X (Pascal         1        19  [CUDA memcpy HtoD]
+420.04ms  2.2720us            (196 1 1)       (512 1 1)         8        0B        0B         -           -  TITAN X (Pascal         1        19  incKernel(int*, int) [154]
+420.08ms  36.929us                    -               -         -         -         -  390.63KB  10.088GB/s  TITAN X (Pascal         1        15  [CUDA memcpy HtoD]
+420.30ms  2.2720us            (196 1 1)       (512 1 1)         8        0B        0B         -           -  TITAN X (Pascal         1        17  incKernel(int*, int) [150]
+420.34ms  2.2720us            (196 1 1)       (512 1 1)         8        0B        0B         -           -  TITAN X (Pascal         1        13  incKernel(int*, int) [140]
+420.37ms  38.625us                    -               -         -         -         -  390.63KB  9.6448GB/s  TITAN X (Pascal         1        20  [CUDA memcpy HtoD]
+420.41ms  33.184us                    -               -         -         -         -  390.63KB  11.226GB/s  TITAN X (Pascal         1        19  [CUDA memcpy DtoH]
+420.45ms  33.152us                    -               -         -         -         -  390.63KB  11.237GB/s  TITAN X (Pascal         1        17  [CUDA memcpy DtoH]
+420.51ms  47.681us                    -               -         -         -         -  390.63KB  7.8129GB/s  TITAN X (Pascal         1        13  [CUDA memcpy DtoH]
+420.61ms  2.2720us            (196 1 1)       (512 1 1)         8        0B        0B         -           -  TITAN X (Pascal         1        15  incKernel(int*, int) [160]
+420.65ms  38.593us                    -               -         -         -         -  390.63KB  9.6528GB/s  TITAN X (Pascal         1        16  [CUDA memcpy HtoD]
+421.00ms  36.897us                    -               -         -         -         -  390.63KB  10.096GB/s  TITAN X (Pascal         1        14  [CUDA memcpy HtoD]
+421.04ms  2.3040us            (196 1 1)       (512 1 1)         8        0B        0B         -           -  TITAN X (Pascal         1        14  incKernel(int*, int) [195]
+421.07ms  38.465us                    -               -         -         -         -  390.63KB  9.6849GB/s  TITAN X (Pascal         1        14  [CUDA memcpy DtoH]
+421.13ms  2.2720us            (196 1 1)       (512 1 1)         8        0B        0B         -           -  TITAN X (Pascal         1        16  incKernel(int*, int) [181]
+421.16ms  41.249us                    -               -         -         -         -  390.63KB  9.0312GB/s  TITAN X (Pascal         1        16  [CUDA memcpy DtoH]
+421.24ms  42.113us                    -               -         -         -         -  390.63KB  8.8459GB/s  TITAN X (Pascal         1        15  [CUDA memcpy DtoH]
+421.45ms  2.5280us            (196 1 1)       (512 1 1)         8        0B        0B         -           -  TITAN X (Pascal         1        20  incKernel(int*, int) [167]
+421.61ms  54.242us                    -               -         -         -         -  390.63KB  6.8679GB/s  TITAN X (Pascal         1        20  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.

@@ -1,0 +1,60 @@
+batchCUBLAS Starting...
+
+MapSMtoCores for SM 6.1 is undefined.  Default to use 128 Cores/SM
+GPU Device 0: "TITAN X (Pascal)" with compute capability 6.1
+
+
+ ==== Running single kernels ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=768 n=768 k=768  alpha = (0xbf800000, -1) beta= (0x40000000, 2)
+#### args: lda=768 ldb=768 ldc=768
+^^^^ elapsed = 0.00034404 sec  GFLOPS=2633.34
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=768 n=768 k=768  alpha = (0x0000000000000000, 0) beta= (0x0000000000000000, 0)
+#### args: lda=768 ldb=768 ldc=768
+^^^^ elapsed = 0.00382400 sec  GFLOPS=236.917
+@@@@ dgemm test OK
+
+ ==== Running N=10 without streams ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=768 n=768 k=768  alpha = (0xbf800000, -1) beta= (0x00000000, 0)
+#### args: lda=768 ldb=768 ldc=768
+^^^^ elapsed = 0.00189090 sec  GFLOPS=4791.21
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=768 n=768 k=768  alpha = (0xbff0000000000000, -1) beta= (0x0000000000000000, 0)
+#### args: lda=768 ldb=768 ldc=768
+^^^^ elapsed = 0.03739691 sec  GFLOPS=242.258
+@@@@ dgemm test OK
+
+ ==== Running N=10 with streams ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=768 n=768 k=768  alpha = (0x40000000, 2) beta= (0x40000000, 2)
+#### args: lda=768 ldb=768 ldc=768
+^^^^ elapsed = 0.00175691 sec  GFLOPS=5156.62
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=768 n=768 k=768  alpha = (0xbff0000000000000, -1) beta= (0x0000000000000000, 0)
+#### args: lda=768 ldb=768 ldc=768
+^^^^ elapsed = 0.03365207 sec  GFLOPS=269.217
+@@@@ dgemm test OK
+
+ ==== Running N=10 batched ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=768 n=768 k=768  alpha = (0x3f800000, 1) beta= (0xbf800000, -1)
+#### args: lda=768 ldb=768 ldc=768
+^^^^ elapsed = 0.00286603 sec  GFLOPS=3161.06
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=768 n=768 k=768  alpha = (0xbff0000000000000, -1) beta= (0x4000000000000000, 2)
+#### args: lda=768 ldb=768 ldc=768
+^^^^ elapsed = 0.03636789 sec  GFLOPS=249.112
+@@@@ dgemm test OK
+
+Test Summary
+0 error(s)

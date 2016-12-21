@@ -1,0 +1,60 @@
+batchCUBLAS Starting...
+
+MapSMtoCores for SM 6.1 is undefined.  Default to use 128 Cores/SM
+GPU Device 0: "TITAN X (Pascal)" with compute capability 6.1
+
+
+ ==== Running single kernels ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=96 n=96 k=96  alpha = (0xbf800000, -1) beta= (0x40000000, 2)
+#### args: lda=96 ldb=96 ldc=96
+^^^^ elapsed = 0.00006080 sec  GFLOPS=29.1047
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=96 n=96 k=96  alpha = (0x0000000000000000, 0) beta= (0x0000000000000000, 0)
+#### args: lda=96 ldb=96 ldc=96
+^^^^ elapsed = 0.00004601 sec  GFLOPS=38.4544
+@@@@ dgemm test OK
+
+ ==== Running N=10 without streams ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=96 n=96 k=96  alpha = (0xbf800000, -1) beta= (0x00000000, 0)
+#### args: lda=96 ldb=96 ldc=96
+^^^^ elapsed = 0.00009680 sec  GFLOPS=182.801
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=96 n=96 k=96  alpha = (0xbff0000000000000, -1) beta= (0x0000000000000000, 0)
+#### args: lda=96 ldb=96 ldc=96
+^^^^ elapsed = 0.00018096 sec  GFLOPS=97.7827
+@@@@ dgemm test OK
+
+ ==== Running N=10 with streams ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=96 n=96 k=96  alpha = (0x40000000, 2) beta= (0x40000000, 2)
+#### args: lda=96 ldb=96 ldc=96
+^^^^ elapsed = 0.00010705 sec  GFLOPS=165.294
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=96 n=96 k=96  alpha = (0xbff0000000000000, -1) beta= (0x0000000000000000, 0)
+#### args: lda=96 ldb=96 ldc=96
+^^^^ elapsed = 0.00012398 sec  GFLOPS=142.725
+@@@@ dgemm test OK
+
+ ==== Running N=10 batched ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=96 n=96 k=96  alpha = (0x3f800000, 1) beta= (0xbf800000, -1)
+#### args: lda=96 ldb=96 ldc=96
+^^^^ elapsed = 0.00004601 sec  GFLOPS=384.544
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=96 n=96 k=96  alpha = (0xbff0000000000000, -1) beta= (0x4000000000000000, 2)
+#### args: lda=96 ldb=96 ldc=96
+^^^^ elapsed = 0.00011182 sec  GFLOPS=158.245
+@@@@ dgemm test OK
+
+Test Summary
+0 error(s)

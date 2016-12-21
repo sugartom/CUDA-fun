@@ -1,0 +1,36 @@
+==14677== NVPROF is profiling process 14677, command: ./matrixMulCUBLAS 4
+==14677== Profiling application: ./matrixMulCUBLAS 4
+==14677== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput           Device   Context    Stream  Name
+370.82ms  5.5040us                    -               -         -         -         -  64.000KB  11.089GB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+370.86ms  5.4720us                    -               -         -         -         -  64.000KB  11.154GB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+370.89ms  5.4720us                    -               -         -         -         -  64.000KB  11.154GB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+370.93ms  5.4720us                    -               -         -         -         -  64.000KB  11.154GB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+861.13ms     896ns                    -               -         -         -         -      112B  119.21MB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+861.34ms  19.073us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1         7  maxwell_sgemm_128x64_raggedMn_nn [267]
+861.41ms  811.88ms              (1 1 1)         (1 1 1)         8        0B        0B         -           -  TITAN X (Pascal         1        15  clock_block(long*, long) [275]
+1.67330s  14.689us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        14  maxwell_sgemm_128x64_raggedMn_nn [331]
+1.67330s  12.577us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        13  maxwell_sgemm_128x64_raggedMn_nn [303]
+1.67332s  12.544us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        13  maxwell_sgemm_128x64_raggedMn_nn [358]
+1.67332s  13.088us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        14  maxwell_sgemm_128x64_raggedMn_nn [385]
+1.67333s  12.544us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        13  maxwell_sgemm_128x64_raggedMn_nn [412]
+1.67334s  12.480us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        14  maxwell_sgemm_128x64_raggedMn_nn [439]
+1.67335s  12.608us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        13  maxwell_sgemm_128x64_raggedMn_nn [466]
+1.67335s  12.321us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        14  maxwell_sgemm_128x64_raggedMn_nn [493]
+1.67336s  12.544us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        13  maxwell_sgemm_128x64_raggedMn_nn [520]
+1.67337s  12.320us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        14  maxwell_sgemm_128x64_raggedMn_nn [547]
+1.67338s  12.480us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        13  maxwell_sgemm_128x64_raggedMn_nn [574]
+1.67338s  12.320us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        14  maxwell_sgemm_128x64_raggedMn_nn [601]
+1.67340s  12.480us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        13  maxwell_sgemm_128x64_raggedMn_nn [628]
+1.67340s  12.353us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        14  maxwell_sgemm_128x64_raggedMn_nn [655]
+1.67341s  12.480us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        13  maxwell_sgemm_128x64_raggedMn_nn [682]
+1.67341s  12.416us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        14  maxwell_sgemm_128x64_raggedMn_nn [709]
+1.67343s  12.576us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        13  maxwell_sgemm_128x64_raggedMn_nn [736]
+1.67343s  12.576us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        14  maxwell_sgemm_128x64_raggedMn_nn [763]
+1.67344s  12.608us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        13  maxwell_sgemm_128x64_raggedMn_nn [790]
+1.67344s  12.480us              (1 2 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        14  maxwell_sgemm_128x64_raggedMn_nn [817]
+1.67368s  5.0880us                    -               -         -         -         -  64.000KB  11.996GB/s  TITAN X (Pascal         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.

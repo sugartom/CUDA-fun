@@ -1,0 +1,14 @@
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_32.txt ./matrixMulCUBLAS 1;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_64.txt ./matrixMulCUBLAS 2;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_96.txt ./matrixMulCUBLAS 3;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_128.txt ./matrixMulCUBLAS 4;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_192.txt ./matrixMulCUBLAS 6;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_256.txt ./matrixMulCUBLAS 8;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_384.txt ./matrixMulCUBLAS 12;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_512.txt ./matrixMulCUBLAS 16;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_768.txt ./matrixMulCUBLAS 24;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_1024.txt ./matrixMulCUBLAS 32;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_1536.txt ./matrixMulCUBLAS 48;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_2048.txt ./matrixMulCUBLAS 64;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_3072.txt ./matrixMulCUBLAS 96;
+nvprof --print-gpu-trace --unified-memory-profiling off --log-file matmul_two_matrix_two_stream_matrix_size_4096.txt ./matrixMulCUBLAS 128;

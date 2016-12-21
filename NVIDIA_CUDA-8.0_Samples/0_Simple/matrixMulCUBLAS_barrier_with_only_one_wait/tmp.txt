@@ -1,0 +1,18 @@
+==4652== NVPROF is profiling process 4652, command: ./matrixMulCUBLAS 8
+==4652== Profiling application: ./matrixMulCUBLAS 8
+==4652== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput           Device   Context    Stream  Name
+377.86ms  22.368us                    -               -         -         -         -  256.00KB  10.915GB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+377.94ms  22.881us                    -               -         -         -         -  256.00KB  10.670GB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+378.02ms  23.616us                    -               -         -         -         -  256.00KB  10.338GB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+378.10ms  22.881us                    -               -         -         -         -  256.00KB  10.670GB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+833.03ms     960ns                    -               -         -         -         -      112B  111.26MB/s  TITAN X (Pascal         1         7  [CUDA memcpy HtoD]
+833.63ms  29.344us              (2 4 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1         7  maxwell_sgemm_128x64_raggedMn_nn [269]
+833.70ms  806.47ms              (1 1 1)         (1 1 1)         8        0B        0B         -           -  TITAN X (Pascal         1        13  clock_block(long*, long) [277]
+1.64017s  31.328us              (2 4 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        13  maxwell_sgemm_128x64_raggedMn_nn [306]
+1.64018s  30.432us              (2 4 1)       (128 1 1)       120  12.250KB        0B         -           -  TITAN X (Pascal         1        14  maxwell_sgemm_128x64_raggedMn_nn [333]
+1.64036s  20.065us                    -               -         -         -         -  256.00KB  12.167GB/s  TITAN X (Pascal         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
